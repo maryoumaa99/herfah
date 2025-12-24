@@ -1,26 +1,71 @@
 @import "tailwindcss";
+@import "./style/theme.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+*{
+    font-family: "TheYearofTheCamel-Bold" ;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    
+}
+   
+    
+
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes customMotion {
+  0% {
+    transform: scale(1.59) ;
+    opacity: 0; 
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1; 
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.myMotion {
+  animation: customMotion 1s ease-in-out ; 
+  transform-origin: center center; 
 }
+
+
+@layer theme {
+  :root {
+    /* LIGHT MODE */
+    --text: #f4f1eb;
+    --background: #3e2f14;
+    --primary: #7F886B;
+    --secondary: #B9C5AD;
+    --accent: #978777;
+
+    /* DARK MODE */
+
+    /* FONTS */
+    --heading: "TheYearofTheCamel-Bold";
+    --bodyFont: "MehrabanArabic";
+  }
+}
+
+@font-face {
+  font-family: "TheYearofTheCamel-Bold";
+  src: url("/fonts/alfont_com_TheYearofTheCamel-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "MehrabanArabic";
+  src: url("/fonts/MehrabanArabicTRIAL-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
