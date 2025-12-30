@@ -1,4 +1,4 @@
-import { describe } from "node:test";
+
 
 export const cats = [
     { catId : 1, catName : " مشغولات بالخزف", catImages : ["/Images/clay/1.jpg" , "/Images/clay/2.jpg", "/Images/clay/3.jpg" , "/Images/clay/4.jpg" , "/Images/clay/5.jpg"  ] , describtion : "تشكيل قطع خزفية يدوية فنية للزينة والاستخدام المنزلي."},
