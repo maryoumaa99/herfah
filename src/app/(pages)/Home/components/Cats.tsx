@@ -3,12 +3,12 @@ import { useState } from "react";
 import { IoArrowRedoSharp } from "react-icons/io5";
 import Image from "next/image";
 
-function Example() {
+function Cats() {
   const [active, setActive] = useState<number | null>(null)
 
   return (
     <div
-      className="h-[90vh] flex flex-col justify-center items-center mt-[10vh]"
+      className="min-h-[120vh]  flex flex-col justify-center items-center max-sm:max-md:mb-[10vh]  w-screen relative "
       id="cats"
     >
       <h1 className="text-5xl text-[var(--text)] mb-5">اقسامنا</h1>
@@ -54,4 +54,4 @@ function Example() {
   )
 }
 
-export default Example
+export default Cats

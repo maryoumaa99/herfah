@@ -90,6 +90,8 @@ export default function LoginForm({onSwitch} : FormProps){
                            ليس لديك حساب ؟
                             
                         </p>
+
+                        
                         </form>
                     </div>
             </div>

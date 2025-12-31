@@ -10,6 +10,7 @@ import Image from "next/image"
 export default function NewMember(){
 
     
+
     // TO SHOW & HIDE LOGIN , REGISTER FORMS
     const [isLogin, setIsLogin] = useState(true)
 
@@ -35,9 +36,9 @@ export default function NewMember(){
 
     return(
         <>
-        <div className="main flex w-[100vw] h-screen" id="account">
+        <div className="main flex w-[100vw] h-screen " id="account">
 
-             <div className="picSlider hidden md:block md:w-1/2 bg-amber-300 relative overflow-hidden ">
+             <div className="picSlider hidden md:block md:w-1/2 min-h-[100vh] relative overflow-hidden ">
             {/* PIC FADE EFFECT */}
                     {bgPics.map((pic, i) => (
                         <Image width={1000} height={1000}
@@ -54,7 +55,7 @@ export default function NewMember(){
 
             </div>
 
-            <div className="form w-[100vw] bg-[var(--background)] md:w-1/2 ">
+            <div className="form w-[100vw] bg-[var(--background)] md:w-1/2 max-sm:max-md:mt-[10vh] ">
                <AnimatePresence mode="wait">
                     {isLogin ? (
                         <motion.div

@@ -27,7 +27,7 @@ export default function RegisterForm({ onSwitch }: FormProps) {
     {type : "text" , palceHolder : "ادخل الاسم" , register : register("name") , title : "الاسم" , errors : errors.name} ,
     {type : "tel" , palceHolder : "ادخل رقم الهاتف" , register : register("phoneNumber") , title : "رقم الهاتف" , errors : errors.phoneNumber} ,
     {type : "password" , palceHolder : "ادخل كلمة السر" , register : register("Password") , title : "كلمة السر" , errors : errors.Password} ,
-    {type : "password" , palceHolder : "ادخل كلمة السر" , register : register("confirmPassword") , title : "اعد كتابة كلمة السر" ,errors : errors.name}
+    {type : "password" , palceHolder : "ادخل كلمة السر" , register : register("confirmPassword") , title : "اعد كتابة كلمة السر" ,errors : errors.confirmPassword}
   ]
 
   return (
@@ -85,17 +85,15 @@ export default function RegisterForm({ onSwitch }: FormProps) {
             </button>
           </div>
 
+
           {/* Login */}
-          <p className="text-[var(--text)] text-sm mt-4 text-center">
-            لديك حساب بالفعل؟
-            <button
-              type="button"
-              className="text-[var(--accent)] font-medium text-sm hover:underline ml-1"
-              onClick={onSwitch}
-            >
-              سجل الدخول
-            </button>
-          </p>
+            <p className="text-[var(--text)] text-sm mt-6 text-center">
+                <button type="button" className="text-[var(--accent)] font-medium text-[18px] hover:underline mr-1" onClick={onSwitch}>
+                سجل الدخول
+                </button>
+            لديك حساب بالفعل؟   
+                
+            </p>
         </form>
       </div>
     </div>

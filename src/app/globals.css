@@ -4,19 +4,16 @@
 
 
 *{
-    font-family: "TheYearofTheCamel-Bold" ;
-    
-
-    
-    
+    font-family: "TheYearofTheCamel-Bold" ; 
 }
 
  body{
     
     background-color: var(--background);
-    overflow-x: hidden;
     
 }
+
+
 
 @keyframes customMotion {
   0% {
